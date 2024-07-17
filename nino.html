@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tienda de Ropa</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body onload="actual();">
+    <script src="main.js"></script>
+    <header>
+      <h1>Tienda de Ropa</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="hombre.html">Hombres</a></li>
+          <li><a href="mujer.html">Mujeres</a></li>
+          <!-- <li><a href="#">Niños</a></li> -->
+          <li><a href="#" onclick="ventana();">Contacto</a></li>
+        </ul>
+      </nav>
+      <img src="image/carrito.jpg" alt="carrito" onclick="carritoTotal();" />
+      <div id="carritoTotal"></div>
+    </header>
+    <main>
+      <section class="productos">
+        <div id="reloj"></div>
+        <h2>Productos Destacados</h2>
+        <div class="producto">
+          <img src="image/pantalonN1.webp" alt="pantalon niño" />
+          <h3>Pantalon corto niño</h3>
+          <p>Precio: 15.99 &euro;</p>
+          <button
+            onclick="carrito('Pantalon corto niño',15.99);carritoTotal();"
+          >
+            Agregar al Carrito
+          </button>
+        </div>
+        <!-- Agrega más productos aquí -->
+        <div class="producto">
+          <img src="image/pantalonN2.webp" alt="Pantalon niño" />
+          <h3>Pantalon corto niño M</h3>
+          <p>Precio: 19.99 &euro;</p>
+          <button
+            onclick="carrito('Pantalon Corto niño M',19.99);carritoTotal();"
+          >
+            Agregar al Carrito
+          </button>
+        </div>
+        <div class="producto">
+          <img src="image/pantalonN3.webp" alt="Ropa niño" />
+          <h3>Pantalon vaquero niño</h3>
+          <p>Precio: 10.99 &euro;</p>
+          <button
+            onclick="carrito('Pantalon vaquero niño',10.99);carritoTotal();"
+          >
+            Agregar al Carrito
+          </button>
+        </div>
+        <div class="producto">
+          <img src="image/polo1.webp" alt="Ropa niño" />
+          <h3>Polo de niño</h3>
+          <p>Precio: 11.99 &euro;</p>
+          <button onclick="carrito('Polo de niño',11.99);carritoTotal();">
+            Agregar al Carrito
+          </button>
+        </div>
+        <div class="producto">
+          <img src="image/polo2.webp" alt="Ropa niño" />
+          <h3>Polo niño rayas</h3>
+          <p>Precio: 9.99 &euro;</p>
+          <button onclick="carrito('Polo de niño rayas',9.99);carritoTotal();">
+            Agregar al Carrito
+          </button>
+        </div>
+        <div class="producto">
+          <img src="image/polo3.webp" alt="Ropa niño" />
+          <h3>Polo niño</h3>
+          <p>Precio: 13.99 &euro;</p>
+          <button onclick="carrito('Polo niño',13.99);carritoTotal();">
+            Agregar al Carrito
+          </button>
+        </div>
+        <div class="producto">
+          <img src="image/setnino.jpg" alt="Ropa niño" />
+          <h3>Set ropa marron</h3>
+          <p>Precio: 50.90 &euro;</p>
+          <button onclick="carrito('Set ropa marron',50.90);carritoTotal();">
+            Agregar al Carrito
+          </button>
+        </div>
+        <div class="producto">
+          <img src="image/kalvinklein.jpg" alt="Ropa niño" />
+          <h3>Set Kalvin Klain niño</h3>
+          <p>Precio: 95.00 &euro;</p>
+          <button onclick="carrito('Set Kalvin Klain',95.00);carritoTotal();">
+            Agregar al Carrito
+          </button>
+        </div>
+        <div class="producto">
+          <img src="image/boxazul.jpg" alt="Ropa niño" />
+          <h3>Set box azul niño</h3>
+          <p>Precio: 57.50 &euro;</p>
+          <button onclick="carrito('Set box azul niño',57.50);carritoTotal();">
+            Agregar al Carrito
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 Tienda de Ropa</p>
+    </footer>
+  </body>
+</html>

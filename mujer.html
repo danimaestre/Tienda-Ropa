@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tienda de Ropa</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body onload="actual();">
+    <script src="main.js"></script>
+    <header>
+      <h1>Tienda de Ropa</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="hombre.html">Hombres</a></li>
+          <!-- <li><a href="#">Mujeres</a></li> -->
+          <li><a href="nino.html">Niños</a></li>
+          <li><a href="#" onclick="ventana();">Contacto</a></li>
+        </ul>
+      </nav>
+      <img src="image/carrito.jpg" alt="carrito" onclick="carritoTotal();"/>
+      <div id="carritoTotal"></div>
+    </header>
+    <main>
+      <section class="productos">
+        <div id="reloj"></div>
+        <h2>Productos Destacados</h2>
+        <div class="producto">
+          <img src="image/pantalonM3.jpeg" alt="Pantalon mujer" />
+          <h3>Pantalon fresco de mujer</h3>
+          <p>Precio: 39.99 &euro;</p>
+          <button onclick="carrito('Pantalon fresco de mujer',39.99);carritoTotal();">Agregar al Carrito</button>
+        </div>
+        <!-- Agrega más productos aquí -->
+        <div class="producto">
+            <img src="image/pantalonM1.webp" alt="Pantalon elegante Mujer" />
+            <h3>Pantalon Elegante Mujer</h3>
+            <p>Precio: 19.99 &euro;</p>
+            <button onclick="carrito('Pantalon elegante de mujer',19.99);carritoTotal();">Agregar al Carrito</button>
+          </div>
+          <div class="producto">
+            <img src="image/pantalonM2.jpeg" alt="Pantalom de mujer" />
+            <h3>Pantalon casual de mujer</h3>
+            <p>Precio: 28.75 &euro;</p>
+            <button onclick="carrito('Pantalon casual de mujer',28.75);carritoTotal();">Agregar al Carrito</button>
+          </div>
+          <div class="producto">
+            <img src="image/blusa1.jpg" alt="blusa de mujer" />
+            <h3>Blusa casual de mujer</h3>
+            <p>Precio: 25.75 &euro;</p>
+            <button onclick="carrito('Blusa casual de mujer',25.75);carritoTotal();">Agregar al Carrito</button>
+          </div>
+          <div class="producto">
+            <img src="image/blusa2.jpeg" alt="blusa de mujer" />
+            <h3>Blusa de mujer</h3>
+            <p>Precio: 18.75 &euro;</p>
+            <button onclick="carrito('Blusa de mujer',18.75);carritoTotal();">Agregar al Carrito</button>
+          </div>
+          <div class="producto">
+            <img src="image/blusa3.jpeg" alt="blusa de mujer" />
+            <h3>Blusa de mujer</h3>
+            <p>Precio: 38.75 &euro;</p>
+            <button onclick="carrito('Blusa de mujer',38.75);carritoTotal();">Agregar al Carrito</button>
+          </div>
+          <div id="compraM"></div>
+          <div class="producto">
+            <img src="image/jerseyM.webp" alt="jersey mujer" />
+            <h3>Jersey punto</h3>
+            <p>Precio: 25.45 &euro;</p>
+            <button onclick="carrito('Jersey de punto',25.45);carritoTotal();">
+              Agregar al Carrito
+            </button>
+          </div> 
+          <div class="producto">
+            <img src="image/jersey2.webp" alt="jersey mujer" />
+            <h3>Jersey punto cardillan</h3>
+            <p>Precio: 35.95 &euro;</p>
+            <button onclick="carrito('Jersey punto cardillan',35.95);carritoTotal();">
+              Agregar al Carrito
+            </button>
+          </div> 
+          <div class="producto">
+            <img src="image/jersey3.webp" alt="jersey mujer" />
+            <h3>Jersey punto</h3>
+            <p>Precio: 50.27 &euro;</p>
+            <button onclick="carrito('Jersey de punto',50.27);carritoTotal();">
+              Agregar al Carrito
+            </button>
+          </div> 
+          
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 Tienda de Ropa</p>
+    </footer>
+  </body>
+</html>

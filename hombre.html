@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tienda de Ropa</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body onload="actual();">
+    <script src="main.js"></script>
+    <header>
+      <h1>Tienda de Ropa</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <!-- <li><a href="#">Hombres</a></li> -->
+          <li><a href="mujer.html">Mujeres</a></li>
+          <li><a href="nino.html">Niños</a></li>
+          <li><a href="#" onclick="ventana();">Contacto</a></li>
+        </ul>
+      </nav>
+      <img src="image/carrito.jpg" alt="carrito" onclick="carritoTotal();" />
+      <div id="carritoTotal"></div>
+    </header>
+
+    <main>
+      <section class="productos">
+        <div id="reloj"></div>
+        <h2>Productos Destacados</h2>
+        <div class="producto">
+          <img src="image/pantalon1.jpg" alt="Pantalon" />
+          <h3>Pantalon cargo hombre</h3>
+          <p>Precio: 39.99 &euro;</p>
+          <button onclick="carrito('Pantalon cargo Hombre',39.99);carritoTotal();">
+            Agregar al Carrito
+          </button>
+        </div>
+        <!-- Agrega más productos aquí -->
+        <div class="producto">
+          <img src="image/pantalon2.jpg" alt="Pantalon" />
+          <h3>Pantalon chino</h3>
+          <p>Precio: 29.99 &euro;</p>
+          <button onclick="carrito('Pantalon chino',29.99);carritoTotal();">
+            Agregar al Carrito
+          </button>
+        </div>
+        <div class="producto">
+          <img src="image/pantalon3.jpg" alt="Pantalon" />
+          <h3>Pantalon vestir</h3>
+          <p>Precio: 59.78 &euro;</p>
+          <button onclick="carrito('Pantalon vestir',59.78);carritoTotal();">
+            Agregar al Carrito
+          </button>
+        </div>
+        <div class="producto">
+          <img src="image/camisa1.jpg" alt="camisas" />
+          <h3>Camisa clasica Oxford</h3>
+          <p>Precio: 20.99 &euro;</p>
+          <button onclick="carrito('Camisa clasica Oxford',20.99);carritoTotal();">
+            Agregar al Carrito
+          </button>
+        </div>
+        <div class="producto">
+          <img src="image/camisa2.jpg" alt="camisas" />
+          <h3>Camisa clasica Tatu Spirit</h3>
+          <p>Precio: 20.99 &euro;</p>
+          <button onclick="carrito('Camisa clasica Tatu Spirit',20.99);carritoTotal();">
+            Agregar al Carrito
+          </button>
+        </div>
+        <div class="producto">
+          <img src="image/camisa3.jpg" alt="camisas" />
+          <h3>Camisa clasica Bigbary</h3>
+          <p>Precio: 15.05 &euro;</p>
+          <button onclick="carrito('Camisa clasica Bigbarry',15.05);carritoTotal();">
+            Agregar al Carrito
+          </button>
+        </div>
+        <div class="producto">
+          <img src="image/stdaderauniversitaria.webp" alt="sudadera" />
+          <h3>Sudadera universitaria</h3>
+          <p>Precio: 80.70 &euro;</p>
+          <button onclick="carrito('Sudadera universitaria',80.70);carritoTotal();">
+            Agregar al Carrito
+          </button>
+        </div>
+        <div class="producto">
+          <img src="image/sudaderafelpa.webp" alt="sudadera" />
+          <h3>Sudadera de felpa</h3>
+          <p>Precio: 59.45 &euro;</p>
+          <button onclick="carrito('Sudadera de felpa',59.45);carritoTotal();">
+            Agregar al Carrito
+          </button>
+        </div>
+        <div class="producto">
+          <img src="image/Sudaderacapucha.webp" alt="sudadera" />
+          <h3>Sudadera con capucha</h3>
+          <p>Precio: 45.70 &euro;</p>
+          <button onclick="carrito('Sudadera con capucha',45.70);carritoTotal();">
+            Agregar al Carrito
+          </button>
+        </div>
+        <div id="compra"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Tienda de Ropa</p>
+    </footer>
+  </body>
+</html>
